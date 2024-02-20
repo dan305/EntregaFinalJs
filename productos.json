@@ -1,0 +1,48 @@
+[
+    {
+        "id": 39,
+        "nombre": "Raptor 700",
+        "marca": "Yamaha",
+        "precio": 13800,
+        "rutaImagen": "raptor700.jpg",
+        "stock": 12,
+        "tipo": "Vehiculos"
+    },
+    {
+        "id": 3,
+        "nombre": "Raptor 350",
+        "marca": "Yamaha",
+        "precio": 4590,
+        "rutaImagen": "raptor350.jpg",
+        "stock": 12,
+        "tipo": "Vehiculos"
+    },
+    {
+        "id": 13,
+        "nombre": "Raptor 250",
+        "marca": "Yamaha",
+        "precio": 3400,
+        "rutaImagen": "raptor250.jpg",
+        "stock": 12,
+        "tipo": "Vehiculos"
+    },
+    {
+        "id": 43,
+        "nombre": "Raptor 660",
+        "marca": "Yamaha",
+        "precio": 7200,
+        "rutaImagen": "raptor660.jpg",
+        "stock": 12,
+        "tipo": "Vehiculos"
+    },
+    {
+        "id": 60,
+        "nombre": "Banshee 350",
+        "marca": "Yamaha",
+        "precio": 11690,
+        "rutaImagen": "banshee350.jpg",
+        "stock": 12,
+        "tipo": "Cuatriciclos"
+    }
+
+]

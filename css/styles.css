@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+
+.tapar {
+  display: none; }
+
+header nav {
+  display: grid;
+  grid-template-areas: "logo logo carito carrito"
+ "buscador buscador buscador buscador";
+  justify-content: space-around;
+  padding: 5px 0;
+  width: 100%;
+  background-color: rgb(241, 241, 241);
+  z-index: 100;
+ }
+  header nav .logo {
+    grid-area: logo; }
+    header nav .logo img {
+      width: 70px;
+      height: 60px;
+      }
+  header nav .buscador {
+    grid-area: buscador;
+    display: flex;
+    justify-content: center; }
+    header nav .buscador input {
+      width: 100%; }
+    header nav .buscador button img {
+      width: 30px;
+      height: 30px; }
+  header nav .carrito-button {
+    grid-area: carrito; }
+    header nav .carrito-button button img {
+      width: 40px;
+      height: 40px; }
+
+main {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px; }
+  main .carrito-de-compras {
+    text-align: center;
+    width: 95%;
+    background-color: white;
+    top: 20px;
+    z-index: 1000;}
+
+      main .carrito-de-compras #tarjetas-carrito .vehiculos-carrito {
+        display: grid;
+        grid-template-areas: "img h2"
+ "img p"
+ "img p"
+ "img p";
+        align-items: center;
+        padding: 10px;
+        position: fixed;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      gap: 20px;
+}
+        main .carrito-de-compras #tarjetas-carrito .vehiculos-carrito img {
+          grid-area: img;
+          width: 15vh;
+          height: 15vh; }
+        main .carrito-de-compras #tarjetas-carrito .vehiculos-carrito h2 {
+          grid-area: h2;
+          font-size: 1rem; }
+        main .carrito-de-compras #tarjetas-carrito .vehiculos-carrito p {
+          font-size: .6rem; }
+    main .carrito-de-compras #total-del-carrito h2 {
+      font-size: 1rem; }
+    main .carrito-de-compras .botones-carrito {
+      display: flex;
+      gap: 1rem;
+      padding: 5px;
+      align-items: center;
+      justify-content: space-around; }
+      main .carrito-de-compras .botones-carrito button {
+        background-color: #0074c2; 
+        color: white; 
+        padding: 10px 20px; 
+        border: none; 
+        border-radius: 5px;
+        cursor: pointer; }
+        main .carrito-de-compras .botones-carrito button:hover{
+          background-color: #00568f; 
+        }
+  
+  main .vehiculos .vehiculos-titulo {
+    color: rgb(11, 55, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: -69px;
+}
+  main .vehiculos .vehiculos-tarjetas {
+    display: flex;
+    padding: 0 10px;
+    gap: .5rem; 
+    width: 1400px;
+  }
+    main .vehiculos .vehiculos-tarjetas .filtros {
+      display: flex;
+      flex-direction: column; 
+      height: 200px;
+      position: relative;
+  }
+      main .vehiculos .vehiculos-tarjetas .filtros .filtros-botones {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem; 
+        border-radius: 10px;
+      width: 20px;}
+
+        main .vehiculos .vehiculos-tarjetas .filtros .filtros-botones button:hover {
+          color: rgb(0, 0, 0);
+          background-color: #d1d1d1;
+          transition: .5s;
+        }
+    main .vehiculos .vehiculos-tarjetas #tarjetas {
+      display: flex;
+      flex-direction: column;
+      padding: 10px 10px;
+      gap: 1rem;
+      height: 510px;
+      overflow-y: scroll; }
+      main .vehiculos .vehiculos-tarjetas #tarjetas .tarjeta-producto {
+        display: grid;
+        grid-template-areas: "img h2"
+      "img p"
+      "img button";
+        text-align: center;
+        background-color: #ffffff;
+        border: 1px solid black;
+        border-radius: 5%;
+        padding: 10px 10px;
+        align-items: center; 
+        height: 300px;
+      }
+        main .vehiculos .vehiculos-tarjetas #tarjetas .tarjeta-producto img {
+          width: 15vh;
+          height: 15vh;
+          padding-right: 10px;
+          object-fit: contain; }
+        main .vehiculos .vehiculos-tarjetas #tarjetas .tarjeta-producto h2 {
+          grid-area: h2;
+          font-size: .8rem; }
+        main .vehiculos .vehiculos-tarjetas #tarjetas .tarjeta-producto p {
+          grid-area: p;
+          font-size: .8rem; }
+        main .vehiculos .vehiculos-tarjetas #tarjetas .tarjeta-producto button {
+          background-color: #0074c2; 
+          color: white; 
+          padding: 10px 20px; 
+          border: none; 
+          border-radius: 5px;
+          cursor: pointer; 
+}
+        main .vehiculos .vehiculos-tarjetas #tarjetas .tarjeta-producto button:hover {
+          background-color: #0051d2;}
+    main .vehiculos .vehiculos-tarjetas #tarjetas::-webkit-scrollbar-thumb {
+      background-color: #ffffff;
+      border-radius: 20%; }
+
+      .footer{
+        background:#0051d2;
+        padding:30px 0px;
+        margin-top: 20px;
+        font-family: 'Play', sans-serif;
+        text-align:center;
+        position: relative;
+        height: 170px;
+        }
+        
+        .footer .row{
+        width:100%;
+        margin:1% 0%;
+        padding:0.6% 0%;
+        color:rgb(255, 255, 255);
+        font-size:0.8em;
+        }
+        
+        .footer .row a{
+        text-decoration:none;
+        color:rgb(255, 255, 255);
+        transition:0.5s;
+        }
+        
+        .footer .row a:hover{
+        color:#fff;
+        }
+        
+        .footer .row ul{
+        width:100%;
+        }
+        
+        .footer .row ul li{
+        display:inline-block;
+        margin:0px 30px;
+        }
+        
+        .footer .row a i{
+        font-size:2em;
+        margin:0% 1%;
+        }
+        
+        @media (max-width:720px){
+        .footer{
+        text-align:left;
+        padding:5%;
+        }
+        .footer .row ul li{
+        display:block;
+        margin:10px 0px;
+        text-align:left;
+        }
+        .footer .row a i{
+        margin:0% 3%;
+        }
+        }
+      
+
+@media screen and (min-width: 600px) {
+
+  main .medios-de-pago {
+    width: 100%; }
+    main .medios-de-pago div {
+      justify-content: center;
+      text-align: center; }
+    main .medios-de-pago div:nth-child(1) {
+      justify-content: center; }
+  main .categorias {
+    justify-content: space-around;
+    width: 100%; }
+    main .categorias .categorias-tarjeta {
+      width: 15rem;
+      height: 15rem; }
+      main .categorias .categorias-tarjeta img {
+        width: 25vh;
+        height: 30vh;
+        object-fit: cover;
+        border-radius: 5%; }
+      main .categorias .categorias-tarjeta p {
+        font-size: 1.5rem; }
+  main .vehiculos {
+    width: 100%;
+    align-items: center;
+    padding: 0 20px; }
+    main .vehiculos .vehiculos-tarjetas {
+      justify-content: space-between; }
+      main .vehiculos .vehiculos-tarjetas .filtros {
+        width: 50%; }
+        main .vehiculos .vehiculos-tarjetas .filtros .filtros-botones {
+          width: 160px; }
+      main .vehiculos .vehiculos-tarjetas #tarjetas {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center; }
+        main .vehiculos .vehiculos-tarjetas #tarjetas .tarjeta-producto {
+          display: flex;
+          flex-direction: column;
+          width: 150px; }
+          main .vehiculos .vehiculos-tarjetas #tarjetas .tarjeta-producto img {
+            width: 15vh;
+            height: 20vh; } }
+
+@media screen and (min-width: 1024px) {
+  header nav {
+    grid-template-areas: "logo buscador buscador carrito"; }
+    header nav .buscador {
+      padding-top: 10px; }
+      header nav .buscador input {
+        height: 40px;
+        width: 600px; }
+      header nav .buscador button {
+        height: 40px; }
+    header nav .carrito-button {
+      padding-top: 7px; }
+  main .carrito-de-compras #tarjetas-carrito {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center; }
+    main .carrito-de-compras #tarjetas-carrito .vehiculos-carrito {
+      width: 250px;
+      height: 200px; } }
